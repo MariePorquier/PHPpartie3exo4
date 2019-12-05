@@ -14,12 +14,11 @@ $departments = array(
     <title>PHP Partie3 Exo4</title>
   </head>
   <body>
-    <?php
+  <?php
       //lecture du tableau ligne par ligne
-      foreach($departments as $value => $element)
-       {
-        echo $value . ' a le numero de département ' . $element . '<br />';
-       }
-      ?>
+      //pour chaque valeur et élément du tableau on va afficher l'index et sa valeur
+      foreach($departments as $index => $value){ ?>
+      <p><?php  echo $value;  ?> a le numero de département <?php echo $index; ?><p/>
+      <?php }; ?>
   </body>
 </html>
